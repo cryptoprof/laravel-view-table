@@ -1,1 +1,1 @@
-<td>{{ $value }}1</td>
+<td>{{ $value }}</td>
