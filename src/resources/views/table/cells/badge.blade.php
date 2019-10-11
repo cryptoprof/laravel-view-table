@@ -1,0 +1,1 @@
+<td class="text-center"><span class="badge {{$options['class']}}">{{ $value }}</span></td>
