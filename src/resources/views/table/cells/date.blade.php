@@ -1,5 +1,7 @@
 <td>
-    {{\Carbon\Carbon::parse($value)->format($options['format'])}}
+    @if($value)
+        {{\Carbon\Carbon::parse($value)->format($options['format'])}}
+    @endif
     @if(isset($options['showDiff']))
         @if($options['showDiff']!='')
             @php
