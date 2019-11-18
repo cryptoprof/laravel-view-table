@@ -1,1 +1,1 @@
-<td align="center"><input type="checkbox" onclick="return false" @if($value == true) checked @endif></td>
+<td class="c-table__cell text-center"><input type="checkbox" onclick="return false" @if($value == true) checked @endif></td>

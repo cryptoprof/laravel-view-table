@@ -2,12 +2,12 @@
     @php
         $json=json_decode($value, true);
     @endphp
-    <td><a href="{{ $options['url_prefix'].$json[$options['url_postfix']]}}">{{$json[$options['value']]}}</a></td>
+    <td class="c-table__cell text-center"><a href="{{ $options['url_prefix'].$json[$options['url_postfix']]}}">{{$json[$options['value']]}}</a></td>
 @elseif($options['type']=='current_model_detail')
     @php
         $base_route = $table['base_route'] ?? '';
     @endphp
-    <td>
+    <td class="c-table__cell text-center">
         <a
                 title="{{ trans('View this record') }}"
                 href="{{ Route::has($base_route.'.show') ? route($base_route.'.show', $id) : '#' }}"

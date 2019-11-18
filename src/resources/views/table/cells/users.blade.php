@@ -1,4 +1,4 @@
-<td>
+<td class="c-table__cell text-center">
     @foreach($value as $user)
         <div class="o-media__body">
             <h6 class="u-text-small u-mb-zero"><i class="fa fa-user-o"></i> {{$user['username']}}</h6>

@@ -1,7 +1,7 @@
 @php
     $base_route = $table['base_route'] ?? '';
 @endphp
-<td>
+<td class="c-table__cell text-center">
     <a class="btn btn-sm btn-success"
        data-toggle="tooltip"
        title="{{ trans('View this record') }}"

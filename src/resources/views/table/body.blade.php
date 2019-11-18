@@ -4,7 +4,7 @@
 @endphp
 <tbody>
 @foreach($data as $item)
-    <tr>
+    <tr class="c-table__row c-table__row--danger">
         @foreach($columns as $column)
             @php
                 $cell = isset($column['cell']) ?

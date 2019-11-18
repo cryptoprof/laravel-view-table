@@ -1,4 +1,4 @@
-<td>
+<td class="c-table__cell text-center">
     @if($value)
         {{\Carbon\Carbon::parse($value)->format($options['format'])}}
     @endif
