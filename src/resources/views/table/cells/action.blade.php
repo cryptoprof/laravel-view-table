@@ -32,7 +32,7 @@
         </form>
     @else
         @foreach($options['buttons'] as $button)
-            <a href="{{$button['url']}}" onclick="confirm('{{$button['confirm']}}')">
+            <a href="{{$button['url']}}{{$value}}" onclick="confirm('{{$button['confirm']}}')">
                 <i class="{{$button['icon-class']}}"></i>
                 {{$button['button-text']}}
             </a><br/>
