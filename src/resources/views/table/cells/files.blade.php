@@ -15,17 +15,24 @@
                             <i class="fa fa-file-text-o u-text-mute u-mr-xsmall pr-2" style="float: left;"></i>
                             {{$file}}
                         </a>
-                        <div class="modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
+                        <div class="c-modal c-modal--xlarge modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="c-modal__dialog modal-dialog">
                                 <div class="modal-content">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div id="loadfile{{$id}}" class="mt-3"></div>
+                                    <header class="c-modal__header">
+                                        <h1 class="c-modal__title">Приложения к поручению</h1>
+                                        <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                    </header>
+                                    <div class="c-modal__body u-text-center u-pb-small">
+                                        <div id="loadfile{{$id}}" class="mt-3"></div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                     @endif
+                    @endif
                 @else
                     <a href="{{ $options['url_prefix'].$file}}">
                         <i class="fa fa-file-text-o u-text-mute u-mr-xsmall pr-2" style="float: left;"></i>
@@ -34,7 +41,7 @@
                 @endif
             </div>
         @endforeach
-        <!-- Large modal -->
+    <!-- Large modal -->
 
 
     @endif
