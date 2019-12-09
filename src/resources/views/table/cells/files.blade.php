@@ -17,15 +17,15 @@
                         </a>
                         <div class="c-modal c-modal--xlarge modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="c-modal__dialog modal-dialog">
-                                <div class="modal-content">
-                                    <header class="c-modal__header">
+                                <div class="c-modal__content">
+                                    <div class="c-modal__header">
                                         <h1 class="c-modal__title">Приложения к поручению</h1>
                                         <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
-                                        <i class="fa fa-close"></i>
-                                    </span>
-                                    </header>
+                                            <i class="fa fa-close"></i>
+                                        </span>
+                                    </div>
                                     <div class="c-modal__body u-text-center u-pb-small">
-                                        <div id="loadfile{{$id}}" class="mt-3"></div>
+                                        <div id="loadfile{{$id}}"></div>
 
                                     </div>
 
