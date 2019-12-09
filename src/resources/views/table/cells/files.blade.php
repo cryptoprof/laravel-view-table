@@ -15,7 +15,7 @@
                             <i class="fa fa-file-text-o u-text-mute u-mr-xsmall pr-2" style="float: left;"></i>
                             {{$file}}
                         </a>
-                        <div class="c-modal c-modal--huge modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: block;">
+                        <div class="c-modal c-modal--huge modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
                             <div class="c-modal__dialog modal-dialog">
                                 <div class="modal-content">
                                     <header class="c-modal__header">
