@@ -15,7 +15,7 @@
                             <i class="fa fa-file-text-o u-text-mute u-mr-xsmall pr-2" style="float: left;"></i>
                             {{$file}}
                         </a>
-                        <div class="c-modal c-modal--xlarge modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="c-modal c-modal--huge modal fade bd-example-modal-lg{{$id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: block;">
                             <div class="c-modal__dialog modal-dialog">
                                 <div class="modal-content">
                                     <header class="c-modal__header">
@@ -24,11 +24,7 @@
                                         <i class="fa fa-close"></i>
                                     </span>
                                     </header>
-                                    <div class="c-modal__body u-text-center u-pb-small">
-                                        <div id="loadfile{{$id}}" class="mt-3"></div>
-
-                                    </div>
-
+                                    <div id="loadfile{{$id}}" class="mt-3"></div>
                                 </div>
                             </div>
                         </div>
