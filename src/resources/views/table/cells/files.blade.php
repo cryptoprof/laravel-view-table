@@ -24,10 +24,7 @@
                                             <i class="fa fa-close"></i>
                                         </span>
                                     </div>
-                                    <div class="c-modal__body u-text-center u-pb-small">
-                                        <div id="loadfile{{$id}}"></div>
-
-                                    </div>
+                                    <div id="loadfile{{$id}}"></div>
 
                                 </div>
                             </div>
