@@ -10,8 +10,7 @@
                 {{--Отображение файла в модалке, например для отображения google docs--}}
                 @if(isset($options['extra_type']))
                     @if($options['extra_type']=='modal')
-                        <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg{{$id}}"
-                           onclick="$('#loadfile{{$id}}').load('/files/show?{{$base_route}}_id={{$id}}');">
+                        <a href="/files/{{$file}}" >
                             <i class="fa fa-file-text-o u-text-mute u-mr-xsmall pr-2" style="float: left;"></i>
                             {{$file}}
                         </a>
