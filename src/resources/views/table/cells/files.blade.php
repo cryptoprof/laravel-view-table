@@ -10,7 +10,7 @@
                 {{--Отображение файла в модалке, например для отображения google docs--}}
                 @if(isset($options['extra_type']))
                     @if($options['extra_type']=='modal')
-                        <a href="/files/{{$file}}" >
+                        <a href="/readf/{{$file}}" >
                             <i class="fa fa-file-text-o u-text-mute u-mr-xsmall pr-2" style="float: left;"></i>
                             {{$file}}
                         </a>
