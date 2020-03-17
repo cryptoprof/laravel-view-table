@@ -58,7 +58,7 @@
                       style="display: inline">
                     @csrf
                     <input type="hidden" name="_method" value="DELETE">
-                    <a href="#" onclick="if (confirm('Удалить корреспондента? Будут затронуты связанные с ним записи')) { document.getElementById('myform{{ $value }}').submit(); }">
+                    <a href="#" onclick="if (confirm('Уверены что хотите удалить запись?')) { document.getElementById('myform{{ $value }}').submit(); }">
                         <i class="fa fa-trash"></i> удалить</a><br/>
                 </form>
             @endif
