@@ -45,7 +45,7 @@
                 request.sort = 'asc';
             }
             delete request.page;
-            location.href = '{!! url()->current() !!}' + '?' + $.param(request)
+            location.href = '{{ url()->current() }}' + '?' + $.param(request)
         }
     })
 </script>
