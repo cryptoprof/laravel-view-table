@@ -1,1 +1,1 @@
-<td class="c-table__cell text-center"><span class="c-badge c-badge--small {{$options['class']}}">{{ $value }}</span></td>
+<td class="c-table__cell text-center {{$field}}"><span class="c-badge c-badge--small {{$options['class']}}">{{ $value }}</span></td>

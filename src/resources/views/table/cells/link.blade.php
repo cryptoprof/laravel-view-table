@@ -7,7 +7,7 @@
     @php
         $base_route = $table['base_route'] ?? '';
     @endphp
-    <td class="c-table__cell text-center">
+    <td class="c-table__cell text-center {{$field}}">
         <a
                 title="{{ trans('View this record') }}"
                 href="{{ Route::has($base_route.'.show') ? route($base_route.'.show', $id) : '#' }}"

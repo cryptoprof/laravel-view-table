@@ -1,1 +1,1 @@
-<td class="c-table__cell text-center">{{ $options['values'][$value] ?? $value }}</td>
+<td class="c-table__cell text-center {{$field}}">{{ $options['values'][$value] ?? $value }}</td>

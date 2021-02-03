@@ -3,7 +3,7 @@
     $base_route = $table['base_route'] ?? '';
 
 @endphp
-<td class="c-table__cell text-center">
+<td class="c-table__cell text-center {{$field}}">
     @if($json)
         @foreach($json as $file)
             <div class="col-12">

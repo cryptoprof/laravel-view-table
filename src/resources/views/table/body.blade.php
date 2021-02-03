@@ -15,9 +15,10 @@
                     ? ($item[$column['field']] ?? null)
                     : ($item['id'] ?? null);
                 $options = $column['options'] ?? [];
+                $field=isset($column['field'])?$column['field']:'';
                 $id = $item['id'];
             @endphp
-            @includeFirst(['table.cells.'.$cell, 'scuti::table.cells.'.$cell ], compact('value', 'table', 'options','id'))
+            @includeFirst(['table.cells.'.$cell, 'scuti::table.cells.'.$cell ], compact('value', 'table', 'options','id','field'))
         @endforeach
     </tr>
 @endforeach

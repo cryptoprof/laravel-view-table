@@ -7,9 +7,9 @@
         @foreach($columns as $column)
             <th
                     @if(isset($column['sortable']) && $column['sortable'])
-                        class="c-table__cell text-center c-table__cell--head sortable " data-sort="{{ $column['field'] }}"
+                        class="c-table__cell text-center c-table__cell--head sortable {{ $column['field'] }}" data-sort="{{ $column['field'] }}"
                     @else
-                        class="c-table__cell text-center c-table__cell--head"
+                        class="c-table__cell text-center c-table__cell--head {{ $column['field'] }}"
                     @endif
             >
                 {{ $column['title'] ?? '' }}
